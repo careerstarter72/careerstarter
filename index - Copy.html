@@ -909,7 +909,8 @@ All this can be done in minutes, not days. Conduct your phone interview, refine 
                     		<label class="sr-only" for="subscribe-email">Email address</label>
                         	<input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
                         </div>
-                        <a type="submit" class="btn" href="mailto:sulthanbasha554@gmail.com" data-dismiss="modal">Subscribe</a>
+                        <a type="submit" class="btn" href="#primary" data-toggle="modal">Subscribe</a>
+						<a class="btn btn-primary" href="#primary" data-toggle="modal"><h4><i class="fa fa-soundcloud"></i> Client Reports</h4></a>
                     </form>
                     <div class="success-message"></div>
                     <div class="error-message"></div>
@@ -919,7 +920,22 @@ All this can be done in minutes, not days. Conduct your phone interview, refine 
            
         </div>
 </div>
-
+<div class="modal fade" id="primary" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h1><i class="fa fa-bar-chart-o"></i> Client Reports</h1>
+                </div>
+                <div class="modal-body">
+                Hello World!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="style/js/popup.js" charset="utf-8"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1105,7 +1121,7 @@ $("#popup_box").hide();
             timer = setInterval(function() {                                    
                     thisPopup.unload();
                
-            }, 30000);            
+            }, 3000);            
         }       
         
         thisPopup.unload = function() {            
