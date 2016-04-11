@@ -352,13 +352,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     -webkit-box-shadow: 0 0 5px;
     box-shadow: 0 0 5px;
 }
-	#clockdiv > div {
-    padding: 10px;
-    border-radius: 3px;
-    background: #2b50c0;
-    display: inline-block;
-    margin: 10px;
-}
+	
 }
 
 @media (max-width: 767px) {
@@ -531,7 +525,7 @@ a {
     width: 685px;
     background: #fff;
     left: 35%;
-    top: 42%;
+    top: 35%;
     margin-left: -150px;
     margin-top: -150px;
     z-index: 100;
@@ -541,8 +535,8 @@ a {
     -webkit-box-shadow: 0 0 5px;
     box-shadow: 0 0 5px;
 }
-#popupBoxClose { 
-    background: #369;
+#popupBoxClose {
+    background: #69F;
     color: #fff;
     padding: 10px;
     margin: -15px -15px 10px -15px;
