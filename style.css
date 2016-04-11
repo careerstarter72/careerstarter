@@ -558,7 +558,7 @@ blockquote p {
   color: #9e9b7e;
 }
 .page-header small:after {
-  content: ' ';
+  /*content: ' '; */
   width: 80px;
   height: 1px;
   background: #e5e5e5;

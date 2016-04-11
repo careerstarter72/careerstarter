@@ -51,16 +51,12 @@
 	</div>
 	
 	<nav>
-		<ul class="pull-left social">
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-			<li><a href="#"><i class="fa fa-rss"></i></a></li>
-		</ul>
+		
 		
 		<ul class="pull-right" id="main-navigation">
-			<li><a href="#header-video">Home</a></li>
-			<li>
+			<li><a href="index.html#header-video">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<!--li>
 				<a href="#work">Work</a>
 				<!--ul>
 					<li>
@@ -72,19 +68,19 @@
 					<li>
 						<a href="single-portfolio-gallery.html">Gallery Post</a>
 					</li>
-				</ul-->
-			</li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#pricing">Pricing</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li>
-				<a href="blog.html">Blog</a>
+				</ul>
+			</li-->
+			<li><a href="index.html#services">Services</a></li>
+			
+			<li><a href="index.html#contact">Contact</a></li>
+			<!--li>
+				<a href="">Blog</a>
 				<!--ul>
 					<li>
 						<a href="single-post.html">Single Post</a>
 					</li>
-				</ul-->
-			</li>
+				</ul>
+			</li-->
 		</ul>
 	</nav>
 	
@@ -316,7 +312,6 @@
 	<!-- end about section -->
 	
 	
-	
 	<footer id="main-footer">
 		<div class="container">
 			<div class="row">
@@ -383,12 +378,7 @@
 				</div>
 				
 				<div class="col-md-6">
-					<ul class="pull-right social">
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fa fa-rss"></i></a></li>
-					</ul>
+					
 				</div>
 				
 			</div>
@@ -569,6 +559,20 @@ $(document).ready(function () {
 		$('.morelink5').show();
 		$(this).hide();
     });
+	
+	$(".morelink6").click(function(){
+        $('.default6').hide();
+		$('.more6').show();
+		$(this).hide();
+		$('.less6').show();
+    });
+	 $(".less6").click(function(){
+        $('.default6').show();
+		$('.more5').hide();
+		$('.morelink6').show();
+		$(this).hide();
+    });
+	
 });
 	
 </script>
