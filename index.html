@@ -921,9 +921,12 @@ All this can be done in minutes, not days. Conduct your phone interview, refine 
                     <form class="form-inline" role="form" method="" style="margin-bottom:25px">
                     	<div class="form-group">
                     		<label class="sr-only" for="subscribe-email">Email address</label>
-                        	<input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+                        	<input type="text" name="email" placeholder="Enter your email..."  class="subscribe-email form-control" id="email">
                         </div>
-                        <a type="submit" class="btn" href="mailto:sulthanbasha554@gmail.com" data-dismiss="modal">Subscribe</a>
+                        <button type="button" name="submit" class="btn" onclick="getMail()" data-dismiss="modal">Subscribe</button>
+						<p id="sucess" style="display:none; color:#333; text-shadow:0; text-align:center;">Subscribed Sucessfully</p>
+						
+						
                     </form>
                     <div class="success-message"></div>
                     <div class="error-message"></div>
@@ -1091,6 +1094,37 @@ $(document).ready(function () {
 });
 	
 </script>
+<script>
+
+
+
+function getMail() {
+var email=$('#email').val();
+var url="https://us13.api.mailchimp.com/2.0/lists/subscribe?apikey=d1809dc6a6df47f72918ff730d0cacfa-us13&id=93989d0b30&email[email]="+email+"&merge_vars[FNAME]=siva&merge_vars[LNAME]=Doe&double_optin=false&send_welcome=false"
+if(email != ''){
+    $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "JSON",
+        success: function (status) {
+		//alert(status);
+		},
+		error:function(status){
+	   $('#sucess').show();
+		 
+		}
+		});
+	}
+	else{
+	//$('#error').show();
+	alert('Please Fill Email');
+	}
+		}
+
+</script>
+
+
+
 <script>
     $(document).ready( function() {
 

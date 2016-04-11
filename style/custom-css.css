@@ -519,13 +519,13 @@ a {
 /*------------Popup styles --------------*/
 
 #popup_box {
-    display: none;
+      display: none;
     position: fixed;
-    height: 525px;
+    height: 565px;
     width: 685px;
     background: #fff;
     left: 35%;
-    top: 35%;
+    top: 30%;
     margin-left: -150px;
     margin-top: -150px;
     z-index: 100;
