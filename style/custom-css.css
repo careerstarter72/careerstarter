@@ -335,6 +335,30 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .timer .minutes,
     .timer .seconds { font-size: 60px; line-height: 70px; }
 	
+	#popup_box {
+    display: none;
+    position: fixed;
+    height: 500px;
+    width: 300px;
+    background: #fff;
+    left: 35%;
+    top: 42%;
+    margin-left: -150px;
+    margin-top: -150px;
+    z-index: 100;
+    padding: 15px;
+    font-size: 15px;
+    -moz-box-shadow: 0 0 5px;
+    -webkit-box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px;
+}
+	#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #2b50c0;
+    display: inline-block;
+    margin: 10px;
+}
 }
 
 @media (max-width: 767px) {
@@ -503,7 +527,7 @@ a {
 #popup_box {
     display: none;
     position: fixed;
-    height: 500px;
+    height: 525px;
     width: 685px;
     background: #fff;
     left: 35%;
@@ -539,4 +563,31 @@ a {
     border-radius: 50%;
     font-size: 14px;
     font-weight: bold;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #2b50c0;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #88a4f9;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
 }

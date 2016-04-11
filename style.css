@@ -1612,4 +1612,25 @@ aside .instafeed .item {
   .item {
     width: 100%;
   }
+}@media (max-width: 480px) {
+#popup_box { top:30% !important; left:50% !important; width:300px !Important; overflow-y:scroll !important;}
+#header-video .page-header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #2b50c0;
+    display: inline-block;
+    margin: 10px;
+}
+#menu-toggle {
+    position: relative;
+    top: 28px;
+    right: 12px;
+    cursor: pointer;
+    padding: 0px 35px 16px 0px;
+    float: right;
+}
 }
